@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const date1 = new Date(2022, 0, 32);
+      console.log('date1 - 32 січня :>> ', date1); // Tue Feb 01 2022 - автоматично виправляє дату до найближчої логічної
+      console.log('date1.getDate() :>> ', date1.getDate()); // 1 - повертає номер дня місяця
+
+      const date2 = new Date(2020, 2, 0);
+      console.log('date2 нульове березня :>> ', date2); // Sat Feb 29 - замість 0 березня повертає останній день лютого
+      console.log('date2.getDate() :>> ', date2.getDate()); // 29 (або 28 для невисокосного року) - отримаємо кількість днів у лютому
+    </script>
+  </body>
+</html>
